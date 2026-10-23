@@ -1,0 +1,13 @@
+CREATE DATABASE credito;
+USE credito;
+CREATE TABLE cadastros (
+id INT AUTO_INCREMENT PRIMARY KEY,
+nome VARCHAR (100) NOT NULL,
+cpf VARCHAR (30) NOT NULL,
+idade INT NOT NULL,
+renda DOUBLE NOT NULL,
+situacao VARCHAR(30)
+);
+
+SELECT * FROM cadastros;
+DELETE FROM cadastros WHERE id = 10;
